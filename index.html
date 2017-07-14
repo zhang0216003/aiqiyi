@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<!--优先移动设备-->
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>爱奇艺</title>
+		<!--js代码-->
+		<script type="text/javascript">
+			  (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                  var clientWidth = docEl.clientWidth;
+                  if (!clientWidth) return;
+                  docEl.style.fontSize = 100 * (clientWidth / 1242) + 'px';
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+
+		</script>
+			<link rel="stylesheet" type="text/css" href="css/aiqiyi.css"/>
+	</head>
+
+	<body>
+		<div class="container">
+			<!--头-->
+			<header>
+				<h3><img src="img/images/QQ20170623103024_03.png"/></h3>
+				<span>
+					<img src="img/images/QQ20170623103024_06.png"/>
+					<img src="img/images/QQ20170623103024_08.png"/>
+					<img src="img/images/QQ20170623103024_10.png"/>
+				</span>
+			</header>
+			<!--中间-->
+			<section>
+				<!--搜素-->
+				<div class="search">
+					<input type="text" placeholder="周末父母" />
+						<div class="sou_img">
+							
+						</div>
+				</div>
+				<!--导航-->
+				<div class="nav">
+						<a href="#">推荐<span></span></a>
+						<a href="#">歌手</a>
+						<a href="#">热点</a>
+						<a href="#">电视台</a>
+						<a href="#">电影</a>
+						<a href="#">综合</a>
+						<a href="#"><img src="img/2.gif"/></a>
+				</div>
+				<div class="banner">
+					<img src="img/images/QQ20170623103024_21.png"/>
+				</div>
+				<div class="main_one">
+					<h3>今日资讯</h3>
+					<span>习近平关心的六件小事></span>
+				</div>
+				<div class="main_two">
+					<p>财政部:个税改革将适增专利扣除项目</p>
+					<p>财政部:个税改革将适增专利扣除项目</p>
+				</div>
+				<div class="main_three">
+					<dl>
+						<dt><img src="img/images/QQ20170623103024_32.png"/></dt>
+						<dd>
+							<h3>杨幂与小阿狸不和？</h3>
+							<p>张艺涵父母:断章取义</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="img/images/QQ20170623103024_32.png"/></dt>
+						<dd>
+							<h3>杨幂与小阿狸不和？</h3>
+							<p>张艺涵父母:断章取义</p>
+						</dd>
+					</dl>
+				</div>
+				<div class="main_three">
+					<dl>
+						<dt><img src="img/images/QQ20170623103024_32.png"/></dt>
+						<dd>
+							<h3>杨幂与小阿狸不和？</h3>
+							<p>张艺涵父母:断章取义</p>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="img/images/QQ20170623103024_32.png"/></dt>
+						<dd>
+							<h3>杨幂与小阿狸不和？</h3>
+							<p>张艺涵父母:断章取义</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<!--底部-->
+			<footer>
+				<dl>
+					<dt><img src="img/images/QQ20170623103024_40.png"/></dt>
+					<dd>视频</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/1.gif"/></dt>
+					<dd>视频</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/1.gif"/></dt>
+					<dd>视频</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/1.gif"/></dt>
+					<dd>视频</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/1.gif"/></dt>
+					<dd>视频</dd>
+				</dl>
+			</footer>
+		</div>
+	</body>
+
+</html>

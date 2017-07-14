@@ -1,0 +1,198 @@
+@import url(m_style.css);
+html,
+body,
+.container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.container {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.container header {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 1.3rem;
+  background: #1a1a1a;
+  -webkit-box-align: center;
+}
+.container header h3 {
+  -webkit-box-flex: 1;
+}
+.container header h3 img {
+  width: 2.24rem;
+  height: auto;
+  background: none;
+  margin-left: 0.29rem;
+}
+.container header span img {
+  width: 0.6rem;
+  height: auto;
+  background: none;
+  margin: 0 0.7rem;
+}
+.container section {
+  overflow: auto;
+  -webkit-box-flex: 1;
+  background: #ebebeb;
+}
+.container section .search {
+  width: auto;
+  height: 0.95rem;
+  background: #ffffff;
+  margin: 0.2rem 0.28rem;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  border-radius: 0.38rem;
+}
+.container section .search input {
+  display: block;
+  -webkit-box-flex: 1;
+  outline: none;
+  text-align: center;
+  line-height: 0.93px;
+  border: 1px solid #aab4a9;
+  border-top-left-radius: 0.38rem;
+  border-bottom-left-radius: 0.38rem;
+}
+.container section .search .sou_img {
+  width: 1.78rem;
+  height: 0.95rem;
+  background: none;
+  background: #0cc009 url("../img/images/QQ20170623103024_17.png") no-repeat center;
+  background-size: 0.38rem;
+  border-top-right-radius: 0.38rem;
+  border-bottom-right-radius: 0.38rem;
+}
+.container section .nav {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: auto;
+  height: 1.18rem;
+  background: #f5f5f5;
+  margin-top: 0.2rem;
+  border-bottom: 1px solid #cfcfcf;
+  -webkit-box-align: center;
+  position: relative;
+}
+.container section .nav a {
+  -webkit-box-flex: 1;
+  display: block;
+  text-align: center;
+  font-size: 0.45rem;
+  color: #484848;
+}
+.container section .nav a:first-child {
+  color: #27bb25;
+}
+.container section .nav a img {
+  width: 1.2rem;
+  height: 1.08rem;
+  background: none;
+}
+.container section .nav span {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-bottom: 2px solid #488c41;
+  width: 1.97rem;
+}
+.container section .banner img {
+  width: auto;
+  height: 5.96rem;
+  background: #ffffff;
+  padding: 0.28rem;
+}
+.container section .main_one {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: auto;
+  height: 1.58rem;
+  background: #ffffff;
+  margin-top: 0.26rem;
+  -webkit-box-align: center;
+  border-bottom: 1px dashed #e6e6e6;
+}
+.container section .main_one h3 {
+  -webkit-box-flex: 1;
+  background: url("../img/images/QQ20170623103024_25.png") no-repeat left center;
+  background-size: 0.62rem;
+  padding-left: 0.8rem;
+  margin-left: 0.36rem;
+  color: #393939;
+  font-size: 0.48rem;
+}
+.container section .main_one span {
+  color: #7d7d7d;
+  font-size: 0.29rem;
+  margin-right: 0.3rem;
+}
+.container section .main_two {
+  width: auto;
+  height: 2.25rem;
+  background: #ffffff;
+}
+.container section .main_two p {
+  -webkit-box-align: center;
+  line-height: 1.06rem;
+  background: url("../img/images/QQ20170623103024_29.png") no-repeat left center;
+  background-size: 0.4rem;
+  padding-left: 0.72rem;
+  margin-left: 0.43rem;
+  font-size: 0.4rem;
+  color: #2c2c2c;
+  letter-spacing: 0.02rem;
+}
+.container section .main_three {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  background: #FFFFFF;
+  padding-bottom: 0.5rem;
+}
+.container section .main_three dl {
+  margin-left: 0.27rem;
+}
+.container section .main_three dl dt img {
+  width: 5.87rem;
+  height: 3.31rem;
+  background: #ffffff;
+}
+.container section .main_three dl dd {
+  margin-top: 0.3rem;
+}
+.container section .main_three dl dd h3 {
+  color: #313131;
+  font-size: 0.4rem;
+  line-height: 0.66rem;
+}
+.container section .main_three dl dd p {
+  color: #747474;
+  font-size: 0.4rem;
+}
+.container footer {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  width: 100%;
+  height: 1.44rem;
+  background: #f5f5f5;
+  -webkit-box-align: center;
+}
+.container footer dl {
+  -webkit-box-flex: 1;
+  text-align: center;
+}
+.container footer dl dt img {
+  width: 0.68rem;
+  height: auto;
+  background: none;
+}
+.container footer dl dd {
+  font-size: 0.27rem;
+  margin-top: 0.16rem;
+  color: #585858;
+}
+.container footer dl:first-child dd {
+  color: #28a71a;
+}

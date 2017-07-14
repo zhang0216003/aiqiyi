@@ -1,0 +1,203 @@
+@import url(m_style.css); //封装 宽高背景 属性
+.full(@w, @h, @bg) {
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+//封装弹性盒
+.box(@ver:horizontal) {
+    display: -webkit-box; //将父元素设置成弹性盒布局
+    -webkit-box-orient: @ver; //设置子元素的排列方式
+}
+html,
+body,
+.container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+//以上为公共样式
+.container {
+    .box(vertical);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    //头
+    header {
+        .box;
+        .full(100%,1.3rem,#1a1a1a);
+        -webkit-box-align: center;
+        h3 {
+            -webkit-box-flex: 1;
+            img {
+                .full(2.24rem,auto,none);
+                margin-left: 0.29rem;
+            }
+        }
+        span {
+            img {
+                .full(0.6rem,auto,none);
+                margin: 0 0.7rem;
+            }
+        }
+    }
+    //header
+    //中间
+    section {
+        overflow: auto;
+        -webkit-box-flex: 1;
+        background: #ebebeb;
+        .search {
+            .full(auto,0.95rem,#fff);
+            margin: 0.2rem 0.28rem;
+            .box;
+            border-radius: 0.38rem;
+            input {
+                display: block;
+                -webkit-box-flex: 1;
+                outline: none;
+                text-align: center;
+                line-height: 0.93px;
+                border: 1px solid #aab4a9;
+                border-top-left-radius: 0.38rem;
+                border-bottom-left-radius: 0.38rem;
+            }
+            .sou_img {
+                .full(1.78rem,0.95rem,none);
+                background: #0cc009 url("../img/images/QQ20170623103024_17.png") no-repeat center;
+                background-size: 0.38rem;
+                border-top-right-radius: 0.38rem;
+                border-bottom-right-radius: 0.38rem;
+            }
+            //sou_img
+        }
+        //input
+        .nav {
+            .box;
+            .full(auto,1.18rem,#f5f5f5);
+            margin-top: 0.2rem;
+            border-bottom: 1px solid #cfcfcf;
+            -webkit-box-align: center;
+            position: relative;
+            a {
+                -webkit-box-flex: 1;
+                display: block;
+                text-align: center;
+                font-size: 0.45rem;
+                color: #484848;
+                &:first-child {
+                    color: #27bb25;
+                }
+                img {
+                    .full(1.2rem,1.08rem,none);
+                    //                  position: absolute;
+                    //                  right: 0;
+                    //                  bottom:0;
+                }
+            }
+            span {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                border-bottom: 2px solid #488c41;
+                width: 1.97rem;
+            }
+        }
+        //nav
+        .banner {
+            img {
+                .full(auto,5.96rem,#ffffff);
+                padding: 0.28rem;
+            }
+        }
+        //banner
+        .main_one {
+            .box;
+            .full(auto,1.58rem,#ffffff);
+            margin-top: 0.26rem;
+            -webkit-box-align: center;
+            border-bottom: 1px dashed #e6e6e6;
+            h3 {
+                -webkit-box-flex: 1;
+                background: url("../img/images/QQ20170623103024_25.png") no-repeat left center;
+                background-size: 0.62rem;
+                padding-left: 0.8rem;
+                margin-left: 0.36rem;
+                color: #393939;
+                font-size: 0.48rem;
+            }
+            span {
+                color: #7d7d7d;
+                font-size: 0.29rem;
+                margin-right: 0.3rem;
+            }
+        }
+        //main_one
+        .main_two {
+            .full(auto,2.25rem,#ffffff);
+            p {
+                -webkit-box-align: center;
+                line-height: 1.06rem;
+                background: url("../img/images/QQ20170623103024_29.png") no-repeat left center;
+                background-size: 0.4rem;
+                padding-left: 0.72rem;
+                margin-left: 0.43rem;
+                font-size: 0.4rem;
+                color: #2c2c2c;
+                letter-spacing: 0.02rem;
+            }
+        }
+        //main_two
+        .main_three {
+            .box;
+            background: #FFFFFF;
+            padding-bottom: 0.5rem;
+            dl {
+                margin-left: 0.27rem;
+                dt {
+                    img {
+                        .full(5.87rem,3.31rem, #fff);
+                    }
+                }
+                dd {
+                    margin-top: 0.3rem;
+                    h3 {
+                        color: #313131;
+                        font-size: 0.4rem;
+                        line-height: 0.66rem;
+                    }
+                    p{
+                         color: #747474;
+                         font-size: 0.4rem;
+                    }
+                }
+            }
+        }
+    }
+    //section
+    //底部
+    footer {
+        .box;
+        .full(100%,1.44rem,#f5f5f5);
+        -webkit-box-align: center; //      border-top: 1px solid #adadad;
+        dl {
+            -webkit-box-flex: 1;
+            text-align: center;
+            dt {
+                img {
+                    .full(0.68rem,auto,none);
+                }
+            }
+            dd {
+                font-size: 0.27rem;
+                margin-top: 0.16rem;
+                color: #585858;
+            }
+            &:first-child {
+                dd {
+                    color: #28a71a;
+                }
+            }
+        }
+    }
+}
+//container
